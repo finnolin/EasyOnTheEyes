@@ -100,10 +100,10 @@ void main() {
             color.rgb *= 0.7;
             if (dither > 0.4) discard;
         #ifdef OVERWORLD
-        /*} else if (color.b > 0.7 && color.r < 0.28 && color.g < 0.425 && color.g > color.r * 1.4){ // physics mod rain
+        } else if (color.b > 0.7 && color.r < 0.28 && color.g < 0.425 && color.g > color.r * 1.4){ // physics mod rain
             if (color.a < 0.1 || isEyeInWater == 3) discard;
             color.a *= rainTexOpacity;
-            color.rgb = sqrt2(color.rgb) * (blocklightCol * 2.0 * lmCoord.x + ambientColor * lmCoord.y * (0.7 + 0.35 * sunFactor));*/
+            color.rgb = sqrt2(color.rgb) * (blocklightCol * 2.0 * lmCoord.x + ambientColor * lmCoord.y * (0.7 + 0.35 * sunFactor));
         } else if (color.rgb == vec3(1.0) && color.a < 0.765 && color.a > 0.605) { // physics mod snow (default snow opacity only)
             if (color.a < 0.1 || isEyeInWater == 3) discard;
             color.a *= snowTexOpacity;
