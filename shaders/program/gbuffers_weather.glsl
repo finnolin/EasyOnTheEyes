@@ -39,7 +39,7 @@ void main() {
 
     if (color.a < 0.1 || isEyeInWater == 3) discard;
 
-    if (color.r + color.g < 1.5) discard;
+    if (color.r + color.g < 1.5) color.a *= rainTexOpacity;
     else color.a *= snowTexOpacity;
 
     color.rgb = sqrt3(color.rgb) * (blocklightCol * 2.0 * lmCoord.x + (ambientColor + 0.2 * lightColor) * lmCoord.y * (0.6 + 0.3 * sunFactor));
