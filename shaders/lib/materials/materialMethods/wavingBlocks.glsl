@@ -103,7 +103,7 @@ void DoWave(inout vec3 playerPos, int mat) {
 
     #if defined GBUFFERS_TERRAIN || defined SHADOW
         #ifdef WAVING_FOLIAGE
-            if (mat == 10005 || mat == 10006 // Grounded Foliage
+            if (mat == 10005 || mat == 10006 || mat == 10007 // Grounded Foliage
                 #ifdef DO_MORE_FOLIAGE_WAVING
                     || mat == 10769 // Torchflower
                     || mat == 10976 // Open Eyeblossom

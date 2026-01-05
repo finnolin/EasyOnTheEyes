@@ -234,7 +234,7 @@ void main() {
 
         if (mat == 10001) { // No directional shading
             noDirectionalShading = true;
-        } else if (mat == 10005 || mat == 10006) { // Grounded Waving Foliage
+        } else if (mat == 10005 || mat == 10006 || mat == 10007) { // Grounded Waving Foliage
             subsurfaceMode = 1, noSmoothLighting = true, noDirectionalShading = true;
             DoFoliageColorTweaks(color.rgb, shadowMult, snowMinNdotU, viewPos, nViewPos, lViewPos, dither);
         } else if (mat == 10009) { // Leaves
